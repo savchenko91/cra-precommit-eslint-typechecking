@@ -1,0 +1,18 @@
+{
+  "name": "@savchenko91/cra-precommit-eslint-typechecking",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "cra-precommit-eslint-typechecking": "./script.js"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Savchenko Alexander (Савченко Александр)",
+  "license": "MIT",
+  "peerDependencies": {
+    "react-dev-utils": "^10.0.0",
+    "webpack": "^4.0.0"
+  }
+}
