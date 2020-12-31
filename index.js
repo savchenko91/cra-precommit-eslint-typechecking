@@ -9,7 +9,7 @@ class Manager {
     this.precommit = b;
   };
 
-  buildRegexp = (regexp) => {
+  buildRegExp = (regexp) => {
     if (!this.precommit) {
       return regexp;
     }

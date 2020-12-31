@@ -11,8 +11,9 @@ const clearConsole = require("react-dev-utils/clearConsole");
 const formatWebpackMessages = require("react-dev-utils/formatWebpackMessages");
 const typescriptFormatter = require("react-dev-utils/typescriptFormatter");
 const forkTsCheckerWebpackPlugin = require("react-dev-utils/ForkTsCheckerWebpackPlugin");
+const appRoot = require('app-root-path')
 
-const manager = require(".");
+const manager = require("./index");
 
 manager.setPrecommit(true);
 
@@ -29,7 +30,7 @@ process.on("unhandledRejection", (err) => {
 const fs = require("fs");
 const webpack = require("webpack");
 
-const paths = require("../../config/paths");
+const paths = require(`${appRoot.path}/config/paths`);
 
 const devSocket = {
   warnings: (warnings) => console.log("warnings", warnings),
@@ -45,7 +46,7 @@ clearConsole();
 run();
 
 async function run() {
-  const configFactory = require("../../config/webpack.config");
+  const configFactory = require(`${appRoot.path}/config/webpack.config`);
   const config = configFactory("development");
 
   setTimeout(() => {
