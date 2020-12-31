@@ -1,6 +1,6 @@
 {
   "name": "@savchenko91/cra-precommit-eslint-typechecking",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "bin": {
     "cra-precommit-eslint-typechecking": "./script.js"
